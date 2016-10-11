@@ -1,0 +1,72 @@
+
+
+<tr style="background-color:#F9F9F9">
+	<td><p id="key"></p></td>
+	<td style='text-align:center !important'>
+		<input type='text' id='qty' style='width:60px; height:27px !important; padding:5px; margin:0px auto;' maxlength=3
+		onKeyUp='calc_string(<?=$i?>, <?=$val?>)' onMouseUp='calc_string(<?=$i?>, <?=$val?>)'/>
+	</td>
+	<td style='text-align:center !important'><?=$val?></td>
+	<td style='text-align:center !important'><span id='qty_cft_<?=$i?>'>0</span></td>
+</tr>
+
+<script>
+var arr = {"A/C, window": 15, 
+"Armoire": 40, 
+"Bed, single": 40,
+"Bed, double/queen": 60,
+"Bed, King": 70,
+"Bench": 5,
+"Bike/Wagon/Toys": 10,
+"Bookcase/Cabinet": 20,
+"Buffet/Creddenza": 30,
+"Cabinet": 15,
+"Chair, straight": 5,
+"Chair, with arms": 10,
+"Chair, overstuffed": 25,
+"Chest/Trunk": 12,
+"China Hutch, 2pc": 50,
+"Crib": 20,
+"Desk": 30,
+"Dresser, single": 30,
+"Dresser, double": 40,
+"Dresser, triple": 50,
+"Exersize Equipment": 20,
+"Grandfather Clock": 20,
+"Ladder/Tools": 2,
+"Lamp": 3,
+"Lawn Mower": 15,
+"Mirror": 3,
+"Microwave": 5,
+"Ottoman": 5,
+"Piano, upright": 60,
+"Piano, grand": 70,
+"Picture / Large": 3,
+"Refrigerator/Freezer": 60,
+"Rug": 10,
+"Serving Cart": 15,
+"Slide/Lrg Toy": 20,
+"Sofa. sect, per sect": 25,
+"Sofa, 2 cushion": 35,
+"Sofa, 3 cushion": 50,
+"Stove/Dishwasher": 30,
+"Swings, outdoor": 60,
+"Table, end/coffee": 10,
+"Table, kitchen": 20,
+"Table, dining": 30,
+"Television": 25,
+"Television Stand": 10,
+"Wall Unit, per pc": 35,
+"Washer / Dryer": 30,
+"Waredrobes": 15,
+"Boxes, client small": 4,
+"Boxes, client large": 6};
+
+function xyuxyuxyu(data) {
+    for (var key in arr) {
+    	
+    document.getElementById("key").innerHTML = key;
+   // alert("key: " + x + " value:" + arr[key]);
+	}
+}
+</script>
